@@ -3,9 +3,9 @@
 #include "CalculatePressure.hpp"
 
 void Check(uint16_t adcValue){
-    float result{};
+    uint32_t result{};
     CalculatePressure(adcValue, &result);
-    std::cout << "Calculated pressure of: " << result << " kPa" << std::endl;
+    std::cout << "Calculated pressure of: " << result / 1000.0 << " kPa" << std::endl;
 }
 
 int main(void) {

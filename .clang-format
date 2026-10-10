@@ -2,3 +2,6 @@ BasedOnStyle: LLVM
 IndentWidth: 4
 BreakBeforeBraces: Linux
 ColumnLimit: 120
+BinPackParameters: false
+BinPackArguments: false
+AlignAfterOpenBracket: Align

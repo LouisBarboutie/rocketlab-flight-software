@@ -11,7 +11,6 @@ size_t BinarySearch(const uint16_t *array, const size_t size, const uint16_t val
     size_t left{0};
     size_t right{size};
 
-    uint8_t iterations{0};
     while (left < right) {
         size_t middle = left + (right - left) / 2;
 
