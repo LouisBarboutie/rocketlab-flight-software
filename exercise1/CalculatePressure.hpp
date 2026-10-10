@@ -1,3 +1,6 @@
+#ifndef __CALCULATE_PRESSURE_HPP__
+#define __CALCULATE_PRESSURE_HPP__
+
 #include <cstdint>
 #include <cstdlib>
 
@@ -18,7 +21,13 @@ const uint16_t adcLookupTable[LOOKUP_TABLE_SIZE] = {
 
 enum PressureReadingStatus {
     PRS_Ok = 0,
-    PRS_OutOfBounds = 1
+    PRS_OutOfBounds = 1,
 };
 
+/// @brief Calculates the pressure in Pa with a resolution of 1 Pa from the given ADC value.
+/// @param adcValue The reading from the ADC to be mapped to a pressure reading
+/// @param out Stores the result of the conversion
+/// @return Status of the conversion, if the ADC value is outside of the calibrated range
 PressureReadingStatus CalculatePressure(const uint16_t adcValue, uint32_t *out);
+
+#endif
