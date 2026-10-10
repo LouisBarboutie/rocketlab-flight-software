@@ -1,4 +1,4 @@
-all: main.o 
+all: 
 	cmake -S . -B build
 	cmake --build build
 clean :
