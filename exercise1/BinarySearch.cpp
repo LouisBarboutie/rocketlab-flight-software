@@ -2,6 +2,8 @@
 
 size_t BinarySearch(const uint16_t *array, const size_t size, const uint16_t value)
 {
+    // cf. Wikipedia, Binary Search, Procedure for finding the leftmost element
+
     if (value >= array[size - 1])
         return size - 1;
 
