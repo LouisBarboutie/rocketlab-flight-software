@@ -1,11 +1,12 @@
 #include "BinarySearch.hpp"
+#include <cstddef>
 #include <cstdint>
 #include <vector>
 #include <cassert>
 #include <iostream>
 
-void Check(std::vector<uint16_t> array, uint16_t soughtValue, uint16_t expectedIndex) {
-    uint16_t index = BinarySearch(array.data(), array.size(), soughtValue);
+void Check(std::vector<uint16_t> array, uint16_t soughtValue, size_t expectedIndex) {
+    size_t index = BinarySearch(array.data(), array.size(), soughtValue);
     std::cout << "Index = " << index << std::endl;
     assert(expectedIndex == index);
 }
@@ -13,7 +14,6 @@ void Check(std::vector<uint16_t> array, uint16_t soughtValue, uint16_t expectedI
 int main(void)
 {
     std::vector<uint16_t> array{};
-    uint16_t index{0};
 
     // Returns index of value if exact value is found
     array.assign({1, 2, 3, 4});
