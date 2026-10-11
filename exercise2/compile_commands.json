@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/louis/Projects/rocketlab-flight-software/exercise2",
+  "command": "/usr/sbin/c++  -I/home/louis/Projects/rocketlab-flight-software/exercise2/inc -std=gnu++20 -Wall -Wextra -Wpedantic -Wconversion -o CMakeFiles/exercise2.dir/src/Shell.cpp.o -c /home/louis/Projects/rocketlab-flight-software/exercise2/src/Shell.cpp",
+  "file": "/home/louis/Projects/rocketlab-flight-software/exercise2/src/Shell.cpp",
+  "output": "CMakeFiles/exercise2.dir/src/Shell.cpp.o"
+},
+{
+  "directory": "/home/louis/Projects/rocketlab-flight-software/exercise2",
+  "command": "/usr/sbin/c++  -I/home/louis/Projects/rocketlab-flight-software/exercise2/inc -std=gnu++20 -Wall -Wextra -Wpedantic -Wconversion -o CMakeFiles/exercise2.dir/src/main.cpp.o -c /home/louis/Projects/rocketlab-flight-software/exercise2/src/main.cpp",
+  "file": "/home/louis/Projects/rocketlab-flight-software/exercise2/src/main.cpp",
+  "output": "CMakeFiles/exercise2.dir/src/main.cpp.o"
+}
+]
